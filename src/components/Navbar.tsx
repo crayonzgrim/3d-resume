@@ -4,7 +4,7 @@ import { menu } from '../assets';
 import logo from '../assets/logo.svg';
 import close from '../assets/close.svg';
 import { navLinks } from '../constants';
-import { styles } from '../styles/style';
+import { styles } from '../styles';
 
 export const Navbar = () => {
   const [active, setActive] = useState(' ');
