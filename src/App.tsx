@@ -6,7 +6,6 @@ import {
   Feedbacks,
   Hero,
   Navbar,
-  StarsCanvas,
   Tech,
   Works,
   About
@@ -27,7 +26,6 @@ function App() {
         <Feedbacks />
         <div className="relative z-0">
           <Contact />
-          <StarsCanvas />
         </div>
       </div>
     </BrowserRouter>

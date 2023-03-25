@@ -8,7 +8,7 @@ type BallType = {
 export const Ball = (props: BallType) => {
   const { imgUrl } = props;
 
-  const [decal] = useTexture([props.imgUrl]);
+  const [decal] = useTexture([imgUrl]);
 
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
