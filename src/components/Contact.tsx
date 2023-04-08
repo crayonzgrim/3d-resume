@@ -8,11 +8,11 @@ import { slideIn } from '../utils';
 import { EarthCanvas } from './canvas/earth';
 
 const Contact = () => {
-  const formRef = useRef<HTMLFormElement | null>(null);
+  const formRef = useRef<HTMLFormElement | string | any>(null);
 
   const [form, setForm] = useState({
-    name: '',
-    email: '',
+    user_name: '',
+    user_email: '',
     message: ''
   });
 
@@ -21,8 +21,9 @@ const Contact = () => {
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
-    const { target } = e;
-    const { name, value } = target;
+    const {
+      target: { name, value }
+    } = e;
 
     setForm({
       ...form,
@@ -32,37 +33,32 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
     setLoading(true);
 
     emailjs
-      .send(
+      .sendForm(
         'service_umnkmyt',
-        'template_21jbu0c',
-        {
-          from_name: form.name,
-          to_name: 'KIM DONG IL',
-          from_email: form.email,
-          to_email: 'cappu159@gmail.com',
-          message: form.message
-        },
+        'template_dhwko7e',
+        formRef.current,
         'Wh0GVmTExr2qImxGD'
       )
       .then(
         () => {
           setLoading(false);
-          alert('Thank you! I will get back to you as soon as possible!');
+
+          alert('고맙습니다! 곧 연락드릴게요! 😁');
 
           setForm({
-            name: '',
-            email: '',
+            user_name: '',
+            user_email: '',
             message: ''
           });
         },
         (error) => {
           setLoading(false);
-          console.error(error);
 
-          alert('Ahh, something went wrong. Please try again.');
+          alert('메일이 보내지지 않네요... 다시 한번 시도해보세요! 🧐');
         }
       );
   };
@@ -73,7 +69,7 @@ const Contact = () => {
     >
       <motion.div
         variants={slideIn('left', 'tween', 0.2, 1)}
-        className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
+        className="flex-[0.80] bg-black-100 p-8 rounded-2xl"
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
@@ -87,10 +83,10 @@ const Contact = () => {
             <span className="text-white font-medium mb-4">Your Name</span>
             <input
               type="text"
-              name="name"
-              value={form.name}
+              name="user_name"
+              value={form.user_name}
               onChange={handleChange}
-              placeholder="What's your good name?"
+              placeholder="이름을 적어주세요."
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
@@ -98,10 +94,10 @@ const Contact = () => {
             <span className="text-white font-medium mb-4">Your email</span>
             <input
               type="email"
-              name="email"
-              value={form.email}
+              name="user_email"
+              value={form.user_email}
               onChange={handleChange}
-              placeholder="What's your web address?"
+              placeholder="이메일을 적어주세요."
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
@@ -112,7 +108,7 @@ const Contact = () => {
               name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder="What you want to say?"
+              placeholder="어떤 말을 전달하고 싶으신가요?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>

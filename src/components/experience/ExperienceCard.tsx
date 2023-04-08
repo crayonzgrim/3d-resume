@@ -4,7 +4,6 @@ import { VerticalTimelineElement } from 'react-vertical-timeline-component';
 type experienceType = {
   title: string;
   company_name: string;
-  icon: any;
   iconBg: string;
   date: string;
   points: string[];
@@ -16,8 +15,9 @@ type ExperienceCardProps = {
 
 export const ExperienceCard = (props: ExperienceCardProps) => {
   const {
-    experience: { title, date, icon, iconBg, company_name, points }
+    experience: { title, company_name, iconBg, date, points }
   } = props;
+
   return (
     <VerticalTimelineElement
       contentStyle={{ background: '#1d1836', color: '#fff' }}
@@ -25,12 +25,12 @@ export const ExperienceCard = (props: ExperienceCardProps) => {
       date={date}
       iconStyle={{ background: iconBg }}
       icon={
-        <div>
-          <img
-            src={icon}
-            alt={company_name}
-            className="w=[60%] h-[60%] object-contain"
-          />
+        <div
+          className={
+            'flex justify-center align-center text-xs h-full w-full py-3 truncate lg:py-[22px]'
+          }
+        >
+          <p>{title}</p>
         </div>
       }
     >

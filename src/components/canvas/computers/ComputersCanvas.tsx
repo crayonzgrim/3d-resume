@@ -1,7 +1,8 @@
 import React, { Suspense, useEffect, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { Computers } from './Computers';
 import { OrbitControls, Preload } from '@react-three/drei';
+
+import { Computers } from './Computers';
 import { CanvasLoader } from '../canvasLoader';
 
 export const ComputersCanvas = () => {

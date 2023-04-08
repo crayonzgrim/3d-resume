@@ -15,14 +15,13 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs
+  recipe,
+  githubProject,
+  nextResume,
+  threejs,
+  github,
+  blog,
+  notion
 } from '../assets';
 
 export const navLinks = [
@@ -46,15 +45,15 @@ const services = [
     icon: web
   },
   {
-    title: 'React Native Developer',
+    title: 'React Developer',
     icon: mobile
   },
   {
-    title: 'Backend Developer',
+    title: 'React Native Developer',
     icon: backend
   },
   {
-    title: 'Content Creator',
+    title: 'Backend Developer',
     icon: creator
   }
 ];
@@ -116,149 +115,126 @@ const technologies = [
 
 const experiences = [
   {
-    title: 'React.js Developer',
-    company_name: 'Starbucks',
-    icon: starbucks,
+    title: 'Aduck',
+    company_name: 'Marketer',
     iconBg: '#383E56',
-    date: 'March 2020 - April 2021',
+    date: '2019. 04 - 2021. 05',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.'
+      '마케팅에 대해 잘 몰랐었기에 매일 2시간씩 일찍 출근하고 늦게 퇴근하면서 공부하였고, 마케팅 자격증도 따는 등의 노력을 기울여 빠른 기간 내에 팀장을 맡을 수 있었고, 인사담당 보조 및 후배분들의 교육 가이드 역할을 했습니다.',
+      '버스, 전광판, 마트 등의 광고 개첨을 위한 광고 디자인 및 디자인 시안 검사를 했습니다. ',
+      '대부분 의료광고를 하기 때문에 심의를 진행하며, 이를 위해서 각 병원의 마케팅 팀장 혹은 원장들과의 커뮤니케이션을 했습니다.'
     ]
   },
   {
-    title: 'React Native Developer',
-    company_name: 'Tesla',
-    icon: tesla,
-    iconBg: '#E6DEDD',
-    date: 'Jan 2021 - Feb 2022',
+    title: 'Moriented',
+    company_name: 'Frontend Developer',
+    iconBg: '#0F182B',
+    date: '2021. 06  - 2021. 12',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.'
+      'React.js, Javascript, styled-components, Redux-toolkit',
+      '기획서 만들기, 로직 플로우 짜기 등에 참여하고 기획서를 토대로 react-apexcharts, chart.js, react-chartjs-2를 활용하여 테이블, 차트 등을 그린 대시보드를 만들어서 AE 마케터분들이 수집한 데이터를 시각화 하는 역할을 하고 있습니다.',
+      'Javascript를 이용한 GTM Tagging을 하고 있습니다.',
+      '클라이언트 회사의 요청에 따른 홈페이지 작업'
     ]
   },
   {
-    title: 'Web Developer',
-    company_name: 'Shopify',
-    icon: shopify,
+    title: 'Powertask',
+    company_name: 'Frontend Developer',
     iconBg: '#383E56',
-    date: 'Jan 2022 - Jan 2023',
+    date: '2021. 11  - Current',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.'
-    ]
-  },
-  {
-    title: 'Full stack Developer',
-    company_name: 'Meta',
-    icon: meta,
-    iconBg: '#E6DEDD',
-    date: 'Jan 2023 - Present',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.'
+      'React.js, TypeScript, Redux-toolkit Query, MUI',
+      '자동화 웹앱 Powertask의 Quick Action 작업',
+      '팀원과의 회의를 통한 재사용성에 대한 고민, 아토믹 디자인 패턴 적용, 성능 개선 등의 대한 작업',
+      'Confluence에 올라온 bug hot-fix 작업'
     ]
   }
 ];
 
 const testimonials = [
   {
-    testimonial:
-      'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
-    name: 'Sara Lee',
-    designation: 'CFO',
-    company: 'Acme Co',
-    image: 'https://randomuser.me/api/portraits/women/4.jpg'
+    name: 'Blog',
+    image: blog,
+    url: 'https://patrick-f.tistory.com/'
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: 'Chris Brown',
-    designation: 'COO',
-    company: 'DEF Corp',
-    image: 'https://randomuser.me/api/portraits/men/5.jpg'
+    name: 'Github',
+    image: github,
+    url: 'https://github.com/crayonzgrim'
   },
   {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: 'Lisa Wang',
-    designation: 'CTO',
-    company: '456 Enterprises',
-    image: 'https://randomuser.me/api/portraits/women/6.jpg'
+    name: 'Notion',
+    image: notion,
+    url: 'https://lush-viscount-141.notion.site/6162e1ad99964e448c86f03085e3b5c0'
   }
 ];
 
 const projects = [
   {
-    name: 'Car Rent',
+    name: 'Food Recipe Project',
     description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+      '비건인 미국인 여자친구를 위해 영문으로 된 음식을 포함한 다양한 음식에 대한 조리법을 담은 웹 제작',
     tags: [
       {
-        name: 'react',
+        name: 'React',
         color: 'blue-text-gradient'
       },
       {
-        name: 'mongodb',
+        name: 'tailwindcss',
         color: 'green-text-gradient'
       },
       {
-        name: 'tailwind',
+        name: 'typescript',
         color: 'pink-text-gradient'
       }
     ],
-    image: carrent,
-    source_code_link: 'https://github.com/'
+    image: recipe,
+    website_link: 'https://recipe-instruction-ingredient.vercel.app/',
+    source_code_link:
+      'https://github.com/crayonzgrim/recipe-instruction-ingredient'
   },
   {
-    name: 'Job IT',
+    name: 'Github API Project',
     description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+      '깃헙 API, Local storage를 활용하여 Public 유저들의 이슈를 볼 수 있는 웹 제작',
     tags: [
       {
-        name: 'react',
+        name: 'React',
         color: 'blue-text-gradient'
       },
       {
-        name: 'restapi',
+        name: 'Material UI',
         color: 'green-text-gradient'
       },
       {
-        name: 'scss',
+        name: 'typescript',
         color: 'pink-text-gradient'
       }
     ],
-    image: jobit,
-    source_code_link: 'https://github.com/'
+    image: githubProject,
+    website_link: 'https://github-search-issues.vercel.app/',
+    source_code_link: 'https://github.com/crayonzgrim/github-issue-project'
   },
   {
-    name: 'Trip Guide',
-    description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+    name: 'Nextjs Resume Project',
+    description: '지인을 위해 Next.js와 tailwindcss를 활용한 웹 이력서 제작',
     tags: [
       {
-        name: 'nextjs',
+        name: 'Next.js',
         color: 'blue-text-gradient'
       },
       {
-        name: 'supabase',
+        name: 'tailwindcss',
         color: 'green-text-gradient'
       },
       {
-        name: 'css',
+        name: 'typescript',
         color: 'pink-text-gradient'
       }
     ],
-    image: tripguide,
-    source_code_link: 'https://github.com/'
+    image: nextResume,
+    website_link: '',
+    source_code_link: 'https://github.com/crayonzgrim/anime-resume'
   }
 ];
 
