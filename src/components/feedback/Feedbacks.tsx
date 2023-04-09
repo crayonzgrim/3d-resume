@@ -18,10 +18,12 @@ const Feedbacks = () => {
             <span className={'text-yellow-300'}>Look around</span> and{' '}
             <span className={'text-yellow-300'}>visit</span> my playground
           </p>
-          <h2 className={styles.sectionHeadText}>My Playgrounds. 🤩</h2>
+          <h2 className={styles.sectionHeadText}>Playgrounds. 🤩</h2>
         </motion.div>
       </div>
-      <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>
+      <div
+        className={`-mt-20 pb-14 ${styles.paddingX} md:flex md:flex-wrap md:gap-7`}
+      >
         {testimonials.map((testimonial, index) => (
           <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
         ))}
