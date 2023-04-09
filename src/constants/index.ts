@@ -18,6 +18,7 @@ import {
   recipe,
   githubProject,
   nextResume,
+  atticResume,
   threejs,
   github,
   blog,
@@ -216,11 +217,11 @@ const projects = [
     source_code_link: 'https://github.com/crayonzgrim/github-issue-project'
   },
   {
-    name: 'Nextjs Resume Project',
-    description: '지인을 위해 Next.js와 tailwindcss를 활용한 웹 이력서 제작',
+    name: 'ThreeJS를 이용한 Project',
+    description: 'fiber, drei, tailwind를 이용한 간단한 3D resume project',
     tags: [
       {
-        name: 'Next.js',
+        name: 'ReactJS',
         color: 'blue-text-gradient'
       },
       {
@@ -228,12 +229,12 @@ const projects = [
         color: 'green-text-gradient'
       },
       {
-        name: 'typescript',
+        name: 'threeJS',
         color: 'pink-text-gradient'
       }
     ],
-    image: nextResume,
-    website_link: '',
+    image: atticResume,
+    website_link: 'https://3d-moving-attic.vercel.app/',
     source_code_link: 'https://github.com/crayonzgrim/anime-resume'
   }
 ];

@@ -25,6 +25,7 @@ import threejs from './tech/threejs.svg';
 import recipe from './food-recipe-project.gif';
 import githubProject from './github-project.gif';
 import nextResume from './next-resume-project.gif';
+import atticResume from './attic-resume.gif';
 
 import blog from './blog.png';
 import notion from './notion.png';
@@ -55,6 +56,7 @@ export {
   recipe,
   githubProject,
   nextResume,
+  atticResume,
   blog,
   notion
 };
