@@ -22,10 +22,9 @@ import tailwind from './tech/tailwind.png';
 import typescript from './tech/typescript.png';
 import threejs from './tech/threejs.svg';
 
-import recipe from './food-recipe-project.gif';
-import githubProject from './github-project.gif';
-import nextResume from './next-resume-project.gif';
-import atticResume from './attic-resume.gif';
+import recipe from './food-recipe-project.png';
+import githubProject from './github-project.png';
+import atticResume from './attic-resume.png';
 
 import blog from './blog.png';
 import notion from './notion.png';
@@ -55,7 +54,6 @@ export {
   threejs,
   recipe,
   githubProject,
-  nextResume,
   atticResume,
   blog,
   notion

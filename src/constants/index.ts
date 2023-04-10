@@ -17,7 +17,6 @@ import {
   docker,
   recipe,
   githubProject,
-  nextResume,
   atticResume,
   threejs,
   github,
