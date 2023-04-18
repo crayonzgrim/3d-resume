@@ -15,10 +15,11 @@ export const FeedbackCard = (props: FeedbackCardProps) => {
   const { index, name, image, url } = props;
 
   return (
-    <Tilt className="bg-tertiary rounded-3xl sm:w-[320px] w-[30px]">
+    // <Tilt className="bg-tertiary rounded-3xl sm:w-[320px] w-[30px]">
+    <Tilt className="bg-transparent xs:mb-9">
       <motion.div
         variants={fadeIn('', 'spring', index * 0.5, 0.75)}
-        className="flex justify-center items-center bg-black-200 p-10 rounded-3xl xs:w-[320px] w-[40px] xs:mb-2"
+        className="flex justify-center items-center bg-black-200 p-10 rounded-3xl xs:w-[320px] w-[320px] xs:mb-2 "
       >
         <div
           className={'flex flex-col align-center justify-center cursor-pointer'}
