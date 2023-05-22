@@ -165,7 +165,7 @@ const testimonials = [
   {
     name: 'Notion',
     image: notion,
-    url: 'https://lush-viscount-141.notion.site/033c560b1fad4c6c94446460c95bc302'
+    url: 'https://lush-viscount-141.notion.site/UI-UX-6724ff99de914d0b94b7d2c3e1c7722b'
   }
 ];
 
