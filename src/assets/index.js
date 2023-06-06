@@ -25,6 +25,8 @@ import threejs from './tech/threejs.svg';
 import recipe from './food-recipe-project.png';
 import githubProject from './github-project.png';
 import atticResume from './attic-resume.png';
+import womanShopping from './woman-shopping.png';
+import imdbMovies from './imdb-movies.png';
 
 import blog from './blog.png';
 import notion from './notion.png';
@@ -56,5 +58,7 @@ export {
   githubProject,
   atticResume,
   blog,
-  notion
+  notion,
+  womanShopping,
+  imdbMovies
 };

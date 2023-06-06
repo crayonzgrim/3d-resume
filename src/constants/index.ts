@@ -16,6 +16,8 @@ import {
   figma,
   docker,
   recipe,
+  imdbMovies,
+  womanShopping,
   githubProject,
   atticResume,
   threejs,
@@ -235,6 +237,49 @@ const projects = [
     image: atticResume,
     website_link: 'https://3d-moving-attic.vercel.app/',
     source_code_link: 'https://github.com/crayonzgrim/anime-resume'
+  },
+  {
+    name: 'IMDb api를 통한 영화 검색',
+    description: 'IMDb api를 활용한 영화 검색과 디테일 페이지',
+    tags: [
+      {
+        name: 'Next.js',
+        color: 'blue-text-gradient'
+      },
+      {
+        name: 'tailwindcss',
+        color: 'green-text-gradient'
+      },
+      {
+        name: 'typescript',
+        color: 'pink-text-gradient'
+      }
+    ],
+    image: imdbMovies,
+    website_link: 'https://tmdb-redesign-bi01v6k43-crayonzgrim.vercel.app/',
+    source_code_link: 'https://github.com/crayonzgrim/tmdb-redesign'
+  },
+  {
+    name: '여성 옷 쇼핑 페이지',
+    description: 'fakeapi를 통한 여성 옷 이커머스 페이지',
+    tags: [
+      {
+        name: 'ReactJS',
+        color: 'blue-text-gradient'
+      },
+      {
+        name: 'tailwindcss',
+        color: 'green-text-gradient'
+      },
+      {
+        name: 'typescript',
+        color: 'pink-text-gradient'
+      }
+    ],
+    image: womanShopping,
+    website_link: 'https://woman-clothes-ecommerce.vercel.app/',
+    source_code_link:
+      'https://github.com/crayonzgrim/shopping-website-fakestoreapi'
   }
 ];
 
