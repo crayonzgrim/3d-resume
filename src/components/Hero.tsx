@@ -16,12 +16,12 @@ export const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#915eff]">DONG IL</span>
+            <span className="text-[#915eff]"> 꾸준함</span>이 장점인 개발자
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I am a front-end developer who cares
-            <br className="sm:block hidden" /> about UI/UX of web application
-            for users
+            시원한 UI/UX와 재사용성을 고려한 컴포넌트, 데이터 설계를{' '}
+            <br className="sm:block hidden" /> 고민하는 프론트엔드 개발자
+            김동일입니다.
           </p>
         </div>
       </div>

@@ -4,13 +4,11 @@ import { styles } from '../styles';
 import { staggerContainer } from '../utils';
 
 interface withSectionWrapperProps {
-  // Component: () => React.ComponentType;
-  Component: any;
+  Component: () => React.ComponentType;
   idName: string | any;
 }
 
 export function withSectionWrapper<T = any>(
-  // Component: React.ComponentType<T & withSectionWrapperProps>,
   Component: React.ComponentType<any>,
   idName: any | string
 ) {
