@@ -31,6 +31,9 @@ import imdbMovies from './imdb-movies.png';
 import blog from './blog.png';
 import notion from './notion.png';
 
+import explodeObj from './explode.png';
+import blendCard from './blendCard.png';
+
 export {
   logo,
   backend,
@@ -60,5 +63,7 @@ export {
   blog,
   notion,
   womanShopping,
-  imdbMovies
+  imdbMovies,
+  explodeObj,
+  blendCard
 };

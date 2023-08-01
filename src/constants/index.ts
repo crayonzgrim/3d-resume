@@ -23,7 +23,9 @@ import {
   threejs,
   github,
   blog,
-  notion
+  notion,
+  explodeObj,
+  blendCard
 } from '../assets';
 
 export const navLinks = [
@@ -280,6 +282,40 @@ const projects = [
     website_link: 'https://woman-clothes-ecommerce.vercel.app/',
     source_code_link:
       'https://github.com/crayonzgrim/shopping-website-fakestoreapi'
+  },
+  {
+    name: '오브젝트 폭발 3D 구현',
+    description: '스크롤을 통한 오브젝트 폭발 구현',
+    tags: [
+      {
+        name: 'ReactJS',
+        color: 'blue-text-gradient'
+      },
+      {
+        name: 'three',
+        color: 'pink-text-gradient'
+      }
+    ],
+    image: explodeObj,
+    website_link: 'https://r3f-explode-object.vercel.app/',
+    source_code_link: 'https://github.com/crayonzgrim/r3f-explode-object'
+  },
+  {
+    name: '포탈 카드 3D',
+    description: '카드를 클릭하면 움직이는 3D 구현',
+    tags: [
+      {
+        name: 'ReactJS',
+        color: 'blue-text-gradient'
+      },
+      {
+        name: 'three',
+        color: 'pink-text-gradient'
+      }
+    ],
+    image: blendCard,
+    website_link: 'https://r3f-mesh-portal-material-tau.vercel.app/',
+    source_code_link: 'https://github.com/crayonzgrim/r3f-mesh-portal-material'
   }
 ];
 
