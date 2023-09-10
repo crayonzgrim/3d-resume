@@ -169,7 +169,7 @@ const testimonials = [
   {
     name: 'Notion',
     image: notion,
-    url: 'https://lush-viscount-141.notion.site/UI-UX-6724ff99de914d0b94b7d2c3e1c7722b'
+    url: 'https://lush-viscount-141.notion.site/UI-UX-abc5738be1b946c2aefafd7364e128b4?pvs=4'
   }
 ];
 
